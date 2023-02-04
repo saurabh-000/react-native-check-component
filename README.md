@@ -64,9 +64,9 @@ const styles = StyleSheet.create({
 | ------------------ | ----------------------------------------------- | --------- | ------------------------------------------------------------------- |
 | checked            | Boolean                                         | Yes       | The checked prop determines whether your checked image is visible.  |
 | imageSource        | ImageSource                                     | Yes       | Image for checkd component                                          |
-| containerStyle     | ViewStyle                                       | Yes       | Style your check component container                                |
+| containerStyle     | ViewStyle                                       | No        | Style your check component container                                |
 | imageStyle         | ImageStyle                                      | No        | Style your image style that is used in the component                |
-| onPress            | Function                                        | No        | The onShow prop allows passing a function that will be called on pressing the component.          |
+| onPress            | Function                                        | yes       | The onShow prop allows passing a function that will be called on pressing the component.          |
 
 ## Contributing
 
