@@ -7,6 +7,8 @@ This is check component compatiable with both android and ios
 ```sh
 npm install react-native-check-component
 ```
+## Note:
+###### Do not use version `0.1.0`
 
 ## Usage
 
@@ -55,10 +57,7 @@ const styles = StyleSheet.create({
   }
 });
 
-```
-
-## Note:
-###### Do not use version `0.1.0`  
+```  
 
 ## Props:
 | Props              | Params                                          | isRequire | Description                                                         |
@@ -66,8 +65,8 @@ const styles = StyleSheet.create({
 | checked            | Boolean                                         | Yes       | The checked prop determines whether your checked image is visible.  |
 | imageSource        | ImageSource                                     | Yes       | Image for checkd component                                          |
 | containerStyle     | ViewStyle                                       | Yes       | Style your check component container                                |
-| imageStyle         | ImageStyle                                      | Yes       | Style your image style that is used in the component                |
-| onPress            | Function                                        | Yes       | The onShow prop allows passing a function that will be called on pressing the component.          |
+| imageStyle         | ImageStyle                                      | No        | Style your image style that is used in the component                |
+| onPress            | Function                                        | No        | The onShow prop allows passing a function that will be called on pressing the component.          |
 
 ## Contributing
 
