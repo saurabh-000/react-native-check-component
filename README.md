@@ -11,12 +11,63 @@ npm install react-native-check-component
 ## Usage
 
 ```js
-import { multiply } from 'react-native-check-component';
+import * as React from 'react';
 
-// ...
+import { StyleSheet, View } from 'react-native';
+import { CheckButton } from 'react-native-check-component';
 
-const result = await multiply(3, 7);
+export default function App() {
+  const [checked,setChecked]=React.useState(false)
+
+  return (
+    <View style={styles.container}>
+      <CheckButton 
+        checked={checked} 
+        onPress={()=>setChecked(!checked)} 
+        imageSource={require('./icon/check.png')} 
+        containerStyle={styles.checkButtonContainer}
+        imageStyle={styles.image}
+        />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  box: {
+    width: 60,
+    height: 60,
+    marginVertical: 20,
+  },
+  checkButtonContainer:{
+      width:25,
+      height:25,
+      borderColor:'red',
+      borderWidth:2,
+  },
+  image:{
+    height:15,
+    width:15
+  }
+});
+
 ```
+
+## Note:
+###### Do not use version `0.1.0`  
+
+## Props:
+| Props              | Params                                          | isRequire | Description                                                         |
+| ------------------ | ----------------------------------------------- | --------- | ------------------------------------------------------------------- |
+| checked            | Boolean                                         | Yes       | The checked prop determines whether your checked image is visible.  |
+| imageSource        | ImageSource                                     | Yes       | Image for checkd component                                          |
+| containerStyle     | ViewStyle                                       | Yes       | Style your check component container                                |
+| imageStyle         | ImageStyle                                      | Yes       | Style your image style that is used in the component                |
+| onPress            | Function                                        | Yes       | The onShow prop allows passing a function that will be called on pressing the component.          |
 
 ## Contributing
 

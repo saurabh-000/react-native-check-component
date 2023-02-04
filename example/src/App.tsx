@@ -1,18 +1,20 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-check-component';
+import { StyleSheet, View } from 'react-native';
+import { CheckButton } from 'react-native-check-component';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const [checked,setChecked]=React.useState(false)
 
   return (
     <View style={styles.container}>
-      <Text>Results: {result}</Text>
+      <CheckButton 
+        checked={checked} 
+        onPress={()=>setChecked(!checked)} 
+        imageSource={require('./icon/check.png')} 
+        containerStyle={styles.checkButtonContainer}
+        imageStyle={styles.image}
+        />
     </View>
   );
 }
@@ -28,4 +30,14 @@ const styles = StyleSheet.create({
     height: 60,
     marginVertical: 20,
   },
+  checkButtonContainer:{
+      width:25,
+      height:25,
+      borderColor:'red',
+      borderWidth:2,
+  },
+  image:{
+    height:15,
+    width:15
+  }
 });
