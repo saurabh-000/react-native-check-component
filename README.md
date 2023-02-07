@@ -11,7 +11,7 @@ npm install react-native-check-component
 ###### Do not use version `0.1.0`
 
 ## Demo:
-![](/example/demo/check_component_video.mp4)
+![](https://github.com/saurabh-000/react-native-check-component/blob/master/example/demo/check-component-video.gif)
 
 ## Usage:
 

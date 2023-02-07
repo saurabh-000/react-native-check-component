@@ -4,7 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import { CheckButton } from 'react-native-check-component';
 
 export default function App() {
-  const [checked,setChecked] = React.useState(true)
+  const [checked,setChecked] =React.useState(true)
 
   return (
     <View style={styles.container}>
