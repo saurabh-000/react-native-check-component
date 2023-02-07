@@ -10,7 +10,10 @@ npm install react-native-check-component
 ## Note:
 ###### Do not use version `0.1.0`
 
-## Usage
+## Demo:
+![](/example/demo/check_component_video.mp4)
+
+## Usage:
 
 ```js
 import * as React from 'react';
@@ -67,6 +70,10 @@ const styles = StyleSheet.create({
 | containerStyle     | ViewStyle                                       | No        | Style your check component container                                |
 | imageStyle         | ImageStyle                                      | No        | Style your image style that is used in the component                |
 | onPress            | Function                                        | yes       | The onShow prop allows passing a function that will be called on pressing the component.          |
+
+
+## Contact me
+You can send your issues and feedback on my email `saurabhsrg19oct@gmail.com` or Join the [discord server](https://discord.gg/TRnwZHgZ9u) here
 
 ## Contributing
 
